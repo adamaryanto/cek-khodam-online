@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background: url(Background\ Web.jpeg);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+#wrapper{
+    margin: 120px auto;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    width: 45%;
+    height: 19rem;
+    border-radius: 18px;
+    backdrop-filter: blur(10px);
+    
+}
+
+
+.form label {
+    color: white;
+    text-transform: capitalize;
+    font-size: 1rem;
+    
+}
+.form input{
+    margin-top: 30px;
+    width: 90%;
+    
+    border-radius: 25px;
+    border: 2px solid lightblue;
+    background-color: rgba(21, 27, 29, 0.747);
+    color: white;
+    font-size: 17px;
+    padding: 10px 20px;
+}
+.form button{
+    margin-top: 20px;
+    background-color: rgba(255, 250, 250, 0.288);
+    padding: 10px 50px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: none;
+    font-size: 1rem;
+    color: white;
+    transition: all .3s ease-in-out;
+}
+#btnReset{
+    position: absolute;
+    top: 31%;
+    left: 31%;
+    background-color: lightblue;
+    color: rgb(107, 107, 107);
+    display: none;
+}
+.form button:hover{
+    background-color: lightblue;
+    transform: scaleX(105%);
+    color: rgb(104, 104, 104);
+    font-weight: bolder;
+}
+#hasil{
+    color: white;
+    font-size: 1.4rem;
+    margin-top: 50px;
+}
+#loader{
+    border-top: 15px solid rgb(0, 0, 0);
+    border-bottom: 15px solid lightblue;
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    left: 47%;
+    border-radius: 50%;
+    animation: .5s spin infinite linear;
+    top: 40%;
+    display: none;
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@media screen and (max-width: 800px){
+    
+    #wrapper{
+        width: 90%;
+    }
+    #loader{
+        border-top: 15px solid rgb(0, 0, 0);
+        border-bottom: 15px solid lightblue;
+        width: 85px;
+        height: 85px;
+        position: absolute;
+        left: 40%;
+        border-radius: 50%;
+        animation: .5s spin infinite linear;
+        top: 50%;
+        display: none;
+    }
+    #btnReset{
+        position: absolute;
+        top: 37%;
+        left: 20%;
+        background-color: lightblue;
+        color: rgb(107, 107, 107);
+        display: none;
+    }
+    #hasil{
+        color: white;
+        font-size: 1.2rem;
+        margin-top: 60px;
+    }
+}
